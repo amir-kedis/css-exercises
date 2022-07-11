@@ -7,6 +7,20 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 img {
   width: 600px;
 }
@@ -24,4 +38,41 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* main layout */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* header and nav */
+.header, .footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* content layout */
+.content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.buttons button {
+  padding: 10px;
+}
+
+/* footer coloring */
+.footer {
+  background-color: #eee;
 }
